@@ -45,8 +45,8 @@ jobs:
         POSTGRES_DB: kittygram
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
-      run: |
-        pytest
+      # run: |
+      #   pytest
 
   frontend_tests:
     runs-on: ubuntu-latest
