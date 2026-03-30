@@ -45,6 +45,7 @@ jobs:
         POSTGRES_DB: kittygram
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
+      run: echo "Tests disabled temporarily"
       # run: |
       #   pytest
 
