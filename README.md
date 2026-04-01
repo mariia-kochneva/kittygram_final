@@ -1,4 +1,3 @@
-```markdown
 # Kittygram
 
 [![CI/CD](https://github.com/mariia-kochneva/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/mariia-kochneva/kittygram_final/actions/workflows/main.yml)
@@ -46,12 +45,16 @@
    ```bash
    cp .env.example .env
    ```
+   
    Заполните переменные окружения:
    - `SECRET_KEY` — секретный ключ Django
    - `DEBUG` — режим отладки (True/False)
    - `ALLOWED_HOSTS` — разрешённые хосты
-   - `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD` — данные для PostgreSQL
-   - `DB_HOST`, `DB_PORT` — хост и порт базы данных
+   - `POSTGRES_DB` — имя базы данных
+   - `POSTGRES_USER` — пользователь PostgreSQL
+   - `POSTGRES_PASSWORD` — пароль PostgreSQL
+   - `DB_HOST` — хост базы данных
+   - `DB_PORT` — порт базы данных
 
 3. Запустить контейнеры:
    ```bash
@@ -76,7 +79,8 @@
 2. Создайте директорию `~/kittygram`.
 3. Настройте Nginx на сервере:
    - Запросы к `kittygrami.ru` должны проксироваться на `http://127.0.0.1:9000`
-   - Пример конфигурации:
+   
+   Пример конфигурации:
    ```nginx
    server {
        server_name kittygrami.ru;
@@ -125,4 +129,3 @@
 Статус последнего workflow: [![CI/CD](https://github.com/mariia-kochneva/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/mariia-kochneva/kittygram_final/actions/workflows/main.yml)
 
 Успешный деплой подтверждается зелёным бейджем и сообщением в Telegram.
-```
